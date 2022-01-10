@@ -53,16 +53,18 @@ Plug 'rhysd/git-messenger.vim'
 Plug 'dr-kino/cscope-maps'
 Plug 'AndrewRadev/linediff.vim' " enables :LineDiff
 Plug 'rust-lang/rust.vim'
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
 colorscheme brogrammer
 " github theme
-let g:github_colors_soft = 1
-colorscheme github
-let g:airline_theme = "github"
-let g:lightline = { 'colorscheme': 'github' }
+" let g:github_colors_soft = 1
+" colorscheme github
+" let g:airline_theme = "github"
+" let g:lightline = { 'colorscheme': 'github' }
 
 hi User1 ctermbg=red ctermfg=white
 "hi ColorColumn ctermbg=lightgrey
@@ -97,3 +99,4 @@ endfunction
 
 nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
 
+let g:fzf_preview_window = []

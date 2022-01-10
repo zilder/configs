@@ -95,6 +95,10 @@ bindsym $mod+space focus mode_toggle
 # focus the parent container
 bindsym $mod+a focus parent
 
+# move to monitor
+bindsym $mod+Ctrl+greater move workspace to output right
+bindsym $mod+Ctrl+less move workspace to output left
+
 # focus the child container
 #bindsym $mod+d focus child
 
@@ -203,4 +207,5 @@ exec --no-startup-id "i3-msg 'workspace \"4: im\"; append_layout /home/zilder/.c
 gaps inner 10
 gaps outer -4
 
-exec compton
+# exec compton
+exec --no-startup-id compton
